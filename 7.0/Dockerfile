@@ -1,4 +1,4 @@
-FROM php:7.1
+FROM php:7.0
 
 ENV COMPOSER_HOME /root/.composer
 ENV PATH $PATH:$COMPOSER_HOME/vendor/bin
