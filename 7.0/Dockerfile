@@ -9,5 +9,7 @@ RUN apt-get update && \
         git \
         libpng-dev \
         unzip && \
-    docker-php-ext-install gd && \
+    docker-php-ext-install \
+        gd \
+        xdebug && \
     curl -sS https://getcomposer.org/installer | php -- --install-dir=/bin --filename=composer
